@@ -1,0 +1,19 @@
+.blue {
+ color:blue;
+}
+
+#my_canvas {
+ border: 1px dotted;
+}
+
+
+.xcanvas{
+color:blue;
+font-weight:bold;
+}
+
+.ycanvas{
+color:purple;
+font-weight:bold;
+}
+

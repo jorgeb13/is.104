@@ -1,0 +1,50 @@
+body
+	{
+	padding-left: 13em;
+	background-color: #FF9966;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+
+ul.menubar
+	{
+	position: absolute;
+	top:	2em;
+	left:	1em;
+	width: 	9em;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	}
+	
+
+	ul.menubar li
+	{
+	background: white;
+	margin: 0.5em 0;
+	padding: 0.3em;
+	border-right: 1em solid grey;
+	}
+
+	
+ul.menubar a
+	{
+	text-decoration: none;
+	}
+	
+	
+a:link
+	{
+	color:blue
+		}
+		
+a:visited
+	{
+	color:black
+	}
+	
+adress
+	{
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top:thin dotted;
+	}

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hendelser med jQuery</title>
+	<script src="js/jquery-1.8.1.js"></script>
+	<!-- Setter inn jcanvas biblioteket som bygger på jQuery -->
+	<script src="js/jcanvas.min.js"></script>
+	
+	<!-- Husk å legge til CSS filen din her" -->
+	<link rel="stylesheet" type="text/css" href="lab3-2.css">
+    <script>
+	
+	$(function() {
+		// Definerer variablen canvas med referanse til objekt (i DOM) med id my_canvas
+		var canvas = $('#my_canvas');
+
+		// Beregner (x,y) posisjon til canvas DOM-element på siden
+		var canvasPosition = {
+			x: canvas.offset().left,
+			y: canvas.offset().top
+		};
+		
+		// Her "fanges" click hendelse opp med jQuery metoden
+		// e refererer til hendelse (event) som da gir mulighet til å kalle tilgjengelige metoder
+		canvas.on('click', function(e) {
+		// Bruker pageX og pageY for å få posisjonen til mus i forhold til hele siden (ikke my_canvas)
+			var mouse = {
+				x: e.pageX - canvasPosition.x,
+				y: e.pageY - canvasPosition.y
+			}
+		
+		/*
+		   Nå har du lokale koordinater i mouse.x og mouse.y som er beregnet i forhold til det lokale 
+		   koordinatsystemet i my_canvas med (0,0) i det øverste venstre hjørne
+		*/
+			// Skriv koordinatene ut til console basert på lab3_v1
+			// oppgave 2 a) besvares her
+			
+			{
+		   console.log([mouse.x]+","+[mouse.y]);
+		   $("#xcanvas").addClass("xcanvas");
+		   $("#ycanvas").addClass("ycanvas");
+		  
+			// Her skrives koordinatene ut til en <span> node
+		
+			// Man skriver til innerHTML og også legger på stil (farge osv.)
+			// oppgave 2 b) besvares her
+			document.getElementById("xcanvas").innerHTML=[mouse.x];
+			document.getElementById("ycanvas").innerHTML=[mouse.y];
+			}
+			
+			canvas.clearCanvas({
+    x: 0, y: 0,
+    width: canvas.width,
+    height: canvas.height
+   })
+			$("canvas").drawText({
+  fillStyle: "#000c",
+  fontStyle: "bold",
+  fontSize: "20pt",
+  fontFamily: "Trebuchet MS, sans-serif",
+  text: [mouse.x]+","+[mouse.y],
+  x: mouse.x, y: mouse.y,
+  maxWidth: 300
+});		
+			
+			return false;
+		});
+	}); 
+	</script>
+</head>
+<body>
+	<p>Testside for å "fange" hendelser fra mus.</p>
+	<p>
+		<ul>
+			<li>[1]Beregne (x,y) posisjon til Canvas DOM element på siden</li> 
+			<li>[2]Finne den globale posisjonen til mus-kursøren i forhold til hele dokumentet</li> 
+			<li>[3]For å lokalisere koordinatsenteret (0,0) til Canvas elementet i det øverste venstre hjørnet, og transformere globale koordinater til lokale koordinater, ta differansen mellom den globale museposisjonen beregnet i [2] og Canvas posisjonen fra [1] </li>
+		</ul>
+	</p>
+	<canvas id="my_canvas" width="200" height="200"
+	style="border:1px solid #000000;"></canvas>
+	<!-- Oppgaveløsning skal implementeres her -->
+	<p>Avstand fra kanten til venstre er <span id="xcanvas"></span></p>
+	<p>Avstand fra kanten på toppen er <span id="ycanvas"></span></p>
+	
+	
+</body>
+</html>

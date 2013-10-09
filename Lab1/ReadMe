@@ -1,0 +1,32 @@
+Lab 1 - Kontrollspørsmål
+
+0) Les introduksjon til JavaScript på http://w3schools.com/js/js_intro.asp og svar på følgende spørsmål, ­ hva kan JavaScript brukes til?
+
+- 	JavaScript kan brukes til alt fra å endre på designet på siden til å skape en "output" for noe brukeren har skrevet inn. Den kan også brukes som en form for validering (passord, visse syntakser, etc.)
+
+
+1) Les minst de to gitte linkene og forklar med dine egne ord forskjell på CSS id og class elementer
+http://www.tizag.com/cssT/cssid.php http://css­tricks.com/the­difference­between­id­and­class/
+
+- 	ID-er kan skreddersys etter hva man skulle behøve, mens class elementer er forhåndsinnstilte. Dette kan gjøre at class elementene ikke tilfredsstiller dine behov, og det kan derfor være en idé å lage dine egne ID'er.
+ 
+
+2) Vurder og sammenlign brukbarhet til versjoner i deloppgave 0 og deloppgave 1 av designet for presentasjon av en liste (ta utgangspunkt at listen er mye lengre enn vist i skjermbildene, over 100 elementer).
+
+- 	Deloppgave 1: Denne listen er oversiktlig dersom det er mange ting som skal presenteres, i og med at man har oversikt over alle språk. En idé kunne være å presentere de alfabetisk for enda mer oversikt og får å gjøre det lett å finne et spesifikt programmeringsspråk.
+	Deloppgave 2: Oversiktlig med få til medium mange elementer. En dropdown menu som er i overkant lang vil være vanskelig å finne frem i.
+	
+
+3) Med hvilken HTML teknikk og designløsning løser Wikipedia (http://en.wikipedia.org/wiki/List_of_programming_languages) problemstilling med en lang liste av programmeringsspråk?
+
+-	Wikipedia har, slik jeg nevnte tidligere, valgt å sortere alfabetisk, og har brukt ID-er og listefunksjonen til den alfabetiske "hotclick"-listen. Videre har de også valgt å bruke vanlig a href (link) på de alfabetiske systematiserte språkene under "hotclick"-listen. DEnne listen er veldig ryddig og oversiktlig.
+
+
+4) Ved å søke på WWW finn ut selv og forklar kort hva som er hovedforskjeller mellom et <div> og et <span> element (tagg) i HTML.
+
+-	<div> starter i forskjellige linjer, mens <span> bare går på en linje. <div> har også en bredde, noe <span> ikke har.
+
+
+5) Hvike brukbarhetsproblemer er det med den siste versjonen av implementeringen i deloppgaven 2? Nevn gjerne hvordan man kunne løse problemene. (Tips: overlapp mellom forskjellige grafiske elementer og tilfelle hvor man ønsker å selektere det første navnet på programmeringsspårket i listen)
+
+-	Det kan oppstå forvirring fra brukerens side når det allerede er valgt et språk i dropdown før brukeren har valgt noe som helst. Dette kanløses ved å lage et blankt alternativ i menyen.	

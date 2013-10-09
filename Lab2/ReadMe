@@ -1,0 +1,7 @@
+Lab2 - Kontrollspørsmål
+
+- Forklar hvilken deler av din applikasjon så langt, implementerer de forskjellige lagene i MVC arkitekturen.
+
+Model: Dette er HTML filen. Denne filen er modellen, selve skjelettet, for hele dataen vi har og holder på den.
+View: Dette er CSS-filen. Denne filen viser hvordan vår data skal se ut (design).
+Controller: Dette er JavasSript-filen. Denne filen kontrollerer hva som skal vises av informasjon i HTML-filen.

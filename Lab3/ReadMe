@@ -1,0 +1,29 @@
+Lab3 - Spørsmål
+
+- 0) Hva er fordelen med et eksisterende JavaScript bibliotek som jQuery i motsetning til å skrive en “rå” JavaScript for dynamisk endring av HTML sider?
+
+Fordelen med et eksisterende JavaScript-bibliotek, som til eksempel jQuery, er at man sparer tid og er garantert at scriptet fungerer. Til motsetning vil man gjennom å skrive en rå script bruke mye tid og er heller ikke garantert at det fungerer. Refleksjon: Hvorfor bruke minutter på å regne ut x^2 når man kan ta det på kalkulatoren?
+
+
+- 1) Les denne artikkelen http://www.ibm.com/developerworks/web/library/wa­htmlmark/index.html og svar på følgende spørsmål: Hva er sterke sider til HTML/CSS og hva er sterke sider til Canvas? I hvilke situasjoner er det meningsfult å bruke Canvas?
+
+Sterke sider ved HTML/CSS:
+ - HTML's robuste tekststøtte
+ - Tekst med flerformet stil
+ - Tekst med dynamisk stil
+ - Mest mulig meningsfull informasjon til søkemotorer
+ - Tilgjengelighet: Strukturert HTML-oppmerking gjør det mulig for skjermleserverktøy å forstå forskjellen mellom en header, footer, list, etc.
+ - Enheter og nettlesere: Stor variasjon av tilgjengelige input-typer som email, nettsider, telefonnummer, dato, etc.
+
+Sterke sider ved Canvas:
+ - Grafisk ytelse: Grafiske oppgaver vil yte raskere i canvas.
+ - Konsistente kryssenheter
+ 
+ Canvas vil være meningsfullt å bruke i situasjoner hvor man skal opprette data som er avhengig av grafisk ytelse. Det kan være man skal lage et spill, eller et eksepsjonelt design, eller andre grafiske funksjonaliteter.
+ 
+ 
+ - 2) Hvilken grafisk presentasjonsmåte (se Innledning til denne oppgaven) hadde du sagt at HTML5 Canvas representerer? Forklar.
+ 
+ Den grafiske presentasjonen genereres hovedsaklig på brukerens aktivitet og forskjellige applikasjoner, enten gjennom hjelp av komponenter som er arrangert i et hierarkisk system, ved hjelp av streker, eller ved hjelp av piksler. Disse tre metodene, CLP (component, line, pixel), vil være en vurderingssak når hver enkelt metode bør tas i bruk.
+ 
+ - X) Jeg har samarbeidet med Alexander Mitchell gjennom store deler av oppgaven og regner ca 4 timer og 30 minutter arbeid bak.
