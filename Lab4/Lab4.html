@@ -1,29 +1,29 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
+<meta charset="utf-8">
 <title>LAB4 alfabetisk liste</title>
-<script src="jquery-2.0.3.min.js"></script>
-<script src="jquery.scrollTo-1.4.3.1.js"></script>
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/jquery.scrollTo-1.4.3.1.js"></script>
 <link rel="stylesheet" type="text/css" href="Lab4.css">
 <script>
 $(function() {
-$(".firstUL li").each(function() {
-$(this).click(function() {
-$(".firstUL li").removeClass("selected");
-$(this).addClass("selected");
-elementClick = $(this).attr("id");
-$(".content-container").scrollTo($("#content-for-"+elementClick), 800);
-$(".content-container div").css( {'background-color' : '#ffffff'} );
-$(".content-container #content-for-+elementClick).css( {'background-color' : '#d2e2fc'} );
+$( ".firstUL li" ).each(function() {
+$( this ).click(function() {
+$( ".firstUL li" ).removeClass ( "selected" );
+$( this ).addClass ( "selected" );
+elementClick = $( this ).attr( "id" );
+$( ".content-container" ).scrollTo($( "#content-for-"+elementClick), 800);
+$( ".content-container div" ).css( {'background-color' : '#ffffff'} );
+$( ".content-container #content-for-"+elementClick ).css( {'background-color' : '#d2e2fc'} );
 });
-$('.return-to-top').click(function() {
-$(".firstUL li").each(function() {
-$(".firstUL li").removeClass("selected");
+$( '.return-to-top' ).click(function() {
+$( ".firstUL li" ).each(function() {
+$( ".firstUL li" ).removeClass ( "selected" );
 });
-$("#a").addClass("selected");
-$(".content-container").scrollTo($("content-for-a"), 800);
-$(".content-container div").css({'background-color' : '#ffffff'} );
-$(".content-container #content-for-a").css({'background-color':'#d2e2fc'});
+$( "a" ).addClass( "selected" );
+$( ".content-container" ).scrollTo($( "#content-for-a" ), 800);
+$( ".content-container div" ).css( { 'background-color': '#ffffff' } );
+$( ".content-container #content-for-a" ).css( { 'background-color' : '#d2e2fc' } );
 });
 </script>
 </head>
