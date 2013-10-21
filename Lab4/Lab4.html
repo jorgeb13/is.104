@@ -7,23 +7,32 @@
 <link rel="stylesheet" type="text/css" href="Lab4.css">
 <script>
 $(function() {
-$( ".firstUL li" ).each(function() {
-$( this ).click(function() {
-$( ".firstUL li" ).removeClass ( "selected" );
-$( this ).addClass ( "selected" );
-elementClick = $( this ).attr( "id" );
-$( ".content-container" ).scrollTo($( "#content-for-"+elementClick), 800);
-$( ".content-container div" ).css( {'background-color' : '#ffffff'} );
-$( ".content-container #content-for-"+elementClick ).css( {'background-color' : '#d2e2fc'} );
-});
-$( '.return-to-top' ).click(function() {
-$( ".firstUL li" ).each(function() {
-$( ".firstUL li" ).removeClass ( "selected" );
-});
-$( "a" ).addClass( "selected" );
-$( ".content-container" ).scrollTo($( "#content-for-a" ), 800);
-$( ".content-container div" ).css( { 'background-color': '#ffffff' } );
-$( ".content-container #content-for-a" ).css( { 'background-color' : '#d2e2fc' } );
+                
+                $( ".firstUL li" ).each(function() {
+                        $( this ).click(function() {
+                                $(".firstUL li").removeClass ( "selected" );
+                                $( this ).addClass ( "selected" );
+                                elementClick = $( this ).attr( "id" );
+
+                                $( ".content-container" ).scrollTo($( "#content-for-"+elementClick), 800);
+
+                                $( ".content-container div" ).css( {'background-color' : '#ffffff'} );
+                                $( ".content-container #content-for-"+elementClick ).css( {'background-color' : '#d2e2fc'} );
+                                
+                        });        
+                });
+                
+                $( '.return-to-top' ).click(function() {
+                        $( ".firstUL li" ).each(function() {
+                                $(".firstUL li").removeClass ( "selected" );
+                        });
+
+                        $( "a" ).addClass ( "selected" );
+                        $( ".content-container" ).scrollTo($( "#content-for-a" ), 800);
+                        $( ".content-container div" ).css( { 'background-color': '#ffffff' } );
+                        $( ".content-container #content-for-a" ).css( { 'background-color' : '#d2e2fc' } );
+
+                        });
 });
 </script>
 </head>
